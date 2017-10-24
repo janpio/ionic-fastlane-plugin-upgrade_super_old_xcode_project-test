@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.002854">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.002529">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: upgrade_super_old_xcode_project" time="0.130922">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
