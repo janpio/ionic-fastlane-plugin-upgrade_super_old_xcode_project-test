@@ -22,6 +22,17 @@ platform :ios do
     # carthage
   end
 
+  desc "Upgrade the Xcode project to Xcode 8"
+  lane :upgrade_xcode_project do
+    team_id = CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+    xcodeprojpath = "platforms/ios/MyApp.xcodeproj"
+  
+    upgrade_super_old_xcode_project(
+      path: xcodeprojpath,
+      team_id: team_id
+    )
+  end
+
   desc "Runs all the tests"
   lane :test do
     scan
